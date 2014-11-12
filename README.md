@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-I am the doctor
 =======
 QUT-Guiabot-Simulation-Model
 ============================
 
-QUT's Guiabot (Human Machine Interface) ROS Simulation Files 
->>>>>>> 469e52f3c14368a472b31eb9979e7ff928c29839
+QUT's Guiabot (Human Machine Interaction Platform) ROS Simulation Files 
+
+Overview
+The QUT-Guiabot-Simulation-Mode module provides a ROS simulation interface for the Queensland University of Technology (QUT) mobile robot, the Guiabot. This module provides users with th means of generating the mobile robot within the Gasebo and Rviz Simulation Environments. This documentation provides instructions on how to use the robot model.
