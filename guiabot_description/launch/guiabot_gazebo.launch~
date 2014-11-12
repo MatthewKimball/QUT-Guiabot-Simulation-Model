@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- start up world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find guiabot_description)/urdf/gazebo/guiabot.urdf.xacro'" />
+
+  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node name="spawn_guiabot_model" pkg="gazebo" type="spawn_model" args="-urdf -param robot_description -model guiabot " respawn="false" output="screen" />
+
+  <!-- state publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />	
+
+
+
+</launch>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- start up world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find guiabot_description)/urdf/gazebo/guiabot.urdf.xacro'" />
+
+<!-- Spawn a robot into Gazebo -->
+<node name="guiabot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" 
+    args="-urdf -param robot_description -model guiabot" />
+
+
+
+</launch>
+
+

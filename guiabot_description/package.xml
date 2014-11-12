@@ -1,0 +1,21 @@
+<package>
+  <name>guiabot_description</name>
+  <version>1.0.0</version>
+  <description>guiabot_description - URDF model of the QUT Guiabot.</description>
+  <maintainer email="matthew.kimball@gmail.com">Matthew Kimball</maintainer>
+  <license>GPL v3 or later</license>
+  <author email="mp.kimball@gmail.com">Matthew Kimball</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>urdf</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>urdf</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>urdf</test_depend> -->
+
+</package>

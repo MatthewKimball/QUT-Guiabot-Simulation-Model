@@ -1,0 +1,47 @@
+jaco:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  joint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_joint_1
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_joint_2
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_joint_3
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_joint_4
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_joint_5
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_joint_6
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_finger_joint_1
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint8_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_finger_joint_2
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+  joint9_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: jaco_finger_joint_3
+    pid: {p: 400.0, d: 5500.0, i: 1800.0, i_clamp: 2.0}
+
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
