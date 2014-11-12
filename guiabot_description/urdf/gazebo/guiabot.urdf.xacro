@@ -295,7 +295,7 @@
       </sensor>
     </gazebo>
 
-<gazebo reference="link_joint">
+<!--gazebo reference="link_joint">
   <plugin name="gazebo_ros_force" plugin="libgazebo_ros_force.so">
     <alwaysOn>true</alwaysOn>
     <update>100</update>
@@ -303,7 +303,7 @@
     <bodyName>base_link</bodyName>
     <topicName>force</topicName>
   </plugin>
-</gazebo>
+</gazebo-->
 
 <gazebo reference="camera_link">
     <sensor type="depth" name="openni_camera_camera">       

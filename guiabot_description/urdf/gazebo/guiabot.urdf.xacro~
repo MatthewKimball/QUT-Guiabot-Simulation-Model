@@ -13,14 +13,6 @@
 </gazebo>
 
 
-  <gazebo>
-    <plugin name="ros_control" filename="libros_control_gazebo_plugin.so">
-      <ns>rr/ros_control</ns>
-      <robotSimType>ros_control_gazebo_tests/guiabot</robotSimType>
-      <controlPeriod>0.001</controlPeriod>
-    </plugin>
-  </gazebo>
-
 <link name="base_link" >
 
     <visual>  
